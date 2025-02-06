@@ -3,13 +3,13 @@ import { projects } from './data/projects';
 import { formations, experience } from './data/education';
 import { faqItems } from './data/faq';
 import { ProjectCard } from './components/ProjectCard';
-import Profile from './Profile';
-import TechnicalSkills from './TechnicalSkills';
-import OrbitSkills from './OrbitSkills'
-import Contact from './Contact';
-import Formation from './Formation';
-import Faq from './Faq';
-import Hobbies from './Hobbies';
+import Profile from './components/Profile';
+import TechnicalSkills from './components/TechnicalSkills';
+import OrbitSkills from './components/OrbitSkills'
+import Contact from './components/Contact';
+import Formation from './components/Formation';
+import Faq from './components/Faq';
+import Hobbies from './components/Hobbies';
 import ViewAllProjectsCard from './components/ViewAllProjectsCard'
 import { Icon } from './components/common/Icon';
 

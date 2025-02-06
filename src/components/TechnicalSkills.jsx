@@ -1,4 +1,4 @@
-import "./styles/TechnicalSkills.css";
+import "./../styles/TechnicalSkills.css";
 import { Link } from "react-router-dom";
 
 function TechnicalSkills({ title, description, className, logo, background }) {
