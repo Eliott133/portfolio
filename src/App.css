@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&display=swap');
+.bg-primary {
+  background-color: #3b82f6; /* Bleu moderne */
+}
+.text-primary {
+  color: #3b82f6;
+}
+
+.backdrop-filter {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.rature {
+  position: relative;
+  display: inline-block;
+  color: black; /* Couleur du texte barré */
+}
+
+.rature::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  height: 4px;
+  transform: rotate(-3deg);
+  background-color: #e74c3c;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.correction {
+  position: absolute;
+  bottom: 100%;
+  left: 5%;
+  transform: rotate(-7deg);
+  padding: 0 2px; 
+  z-index: 2; 
+  font-weight: bold; 
+  color: #27ae60;
+  font-family: "Gloria Hallelujah", serif;
+  white-space: nowrap;
+}
+
+.required-indicator::after{
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  color: #e74c3c;
+}
+
+a.underline-effect {
+  position: relative;
+  display: inline-flex;
+  padding: 0.2em 0;
+  color: inherit;
+  text-decoration: none;
+}
+
+a.underline-effect::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: hotpink;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-out;
+}
+
+a.underline-effect:hover::after,
+a.underline-effect:focus::after {
+  transform: scaleX(1);
+}

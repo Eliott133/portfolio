@@ -1,0 +1,81 @@
+.orbit-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform-origin: center;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+.orbit-small {
+  animation: rotate-small 10s linear infinite;
+}
+
+.orbit-medium {
+  animation: rotate-medium 14s linear infinite;
+}
+
+.orbit-large {
+  animation: rotate-large 20s linear infinite;
+}
+
+.orbit-item-small {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(55px);
+  animation: fade-in 3s;
+}
+
+.orbit-item-medium {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(125px);
+  animation: fade-in 3s;
+}
+
+.orbit-item-large {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(185px);
+  animation: fade-in 3s;
+}
+
+@keyframes rotate-small {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes rotate-medium {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+
+@keyframes rotate-large {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+  
+}
