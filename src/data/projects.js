@@ -8,7 +8,7 @@ export const projects = [
       demoUrl: "https://music-together-demo.com"
     },
     {
-      preview: "/src/assets/projet/projet_1.webp",
+      preview: "/src/assets/project/voxceleb-project.png",
       name: "Évaluation de l'interprétabilité des représentations vectorielles",
       description: "Projet de recherche avec le LIUM sur l'évaluation des représentations neuronales en identification du locuteur. Développement de filtres audio et analyse des dimensions du modèle SPINE pour améliorer l'interprétabilité.",
       langage: ["react", "postgresql", "nodejs", "tailwind", "python"],
