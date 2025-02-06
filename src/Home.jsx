@@ -10,9 +10,12 @@ import Contact from './Contact';
 import Formation from './Formation';
 import Faq from './Faq';
 import Hobbies from './Hobbies';
+import ViewAllProjectsCard from './components/ViewAllProjectsCard'
 import { Icon } from './components/common/Icon';
 
 function Home() {
+
+  const featuredProjects = projects.slice(0, 3);
 
   return (
     <div className="grid w-full gap-4 grid-cols-1 md:grid-cols-4 auto-rows-auto">
@@ -26,13 +29,15 @@ function Home() {
         background={<OrbitSkills />}
       />
 
-      {projects.map((project, index) => (
+      {featuredProjects.map((project, index) => (
         <ProjectCard
           key={index}
           {...project}
           className="col-span-1 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-2"
         />
       ))}
+
+      <ViewAllProjectsCard className="col-span-1 md:col-span-2 md:row-span-2 lg:col-span-1 lg:row-span-2" />
 
       <Formation 
         className="col-span-1 md:col-span-2 md:row-span-3" 
