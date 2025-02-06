@@ -1,5 +1,5 @@
 import React, { useState, useMemo } from 'react';
-import { ProjectCard } from '../components/ProjectCard';
+import ProjectCard from '../components/ProjectCard';
 import { projects } from '../data/projects';
 
 function ProjectsPage () {

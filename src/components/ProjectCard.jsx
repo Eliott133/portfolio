@@ -3,7 +3,7 @@ import { Card } from './common/Card';
 import { Button } from './common/Button';
 import { Icon } from './common/Icon';
 
-export const ProjectCard = ({
+function ProjectCard({
   preview,
   name,
   description,
@@ -11,7 +11,7 @@ export const ProjectCard = ({
   githubUrl,
   demoUrl,
   className = ''
-}) => {
+}){
   const [hoveredLangage, setHoveredLangage] = useState('');
 
   return (
@@ -75,3 +75,5 @@ export const ProjectCard = ({
     </Card>
   );
 };
+
+export default ProjectCard
