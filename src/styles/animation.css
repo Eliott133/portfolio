@@ -1,0 +1,55 @@
+@keyframes fade-in-down {
+    0% {
+        opacity: 0;
+        transform: translateY(-15px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes orbit-rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+.animate-fade-in-down {
+    animation: fade-in-down 1s ease-out forwards;
+}
+
+.orbit-animation {
+    animation: orbit-rotate 20s linear infinite;
+}
+
+a.underline-effect {
+    position: relative;
+    display: inline-flex;
+    padding: 0.2em 0;
+    color: inherit;
+    text-decoration: none;
+}
+
+a.underline-effect::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: hotpink;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease-out;
+}
+
+a.underline-effect:hover::after,
+a.underline-effect:focus::after {
+    transform: scaleX(1);
+}

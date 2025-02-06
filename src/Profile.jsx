@@ -28,7 +28,7 @@ function Profile({ className }) {
 
       <div className="flex justify-between items-center border-t pt-4 relative">
         <div>
-          <h2 className="text-xl font-bold rature">Roger Smith <span className="correction">Eliott MAUBERT</span></h2>
+          <h2 className="text-xl font-bold rature">Eliott MAUBERT</h2>
           <p className="text-gray-600">Développeur Full Stack</p>
         </div>
         <div className="absolute right-0 px-4 py-2 transform translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0">

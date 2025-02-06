@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
 
-function SkillsPage({ items, title_section, description_section, className }) {
+function SkillsPage({ items, className }) {
   const [activeCategory, setActiveCategory] = useState("all");
   const categories = [
     { id: "all", label: "Tous" },
@@ -21,15 +21,12 @@ function SkillsPage({ items, title_section, description_section, className }) {
   return (
     <div className={`min-h-screen p-8 ${className}`}>
       <h1 className="text-4xl font-bold mb-4 text-center">
-        {title_section || "Mes Compétences"}
+       Mes Compétences
       </h1>
 
-      {/* Description de la section */}
-      {description_section && (
-        <p className="text-center text-lg mb-8">
-          {description_section}
-        </p>
-      )}
+      <p className="text-center text-lg mb-8">
+        Voici une liste de mes compétences organisées par catégorie. Cliquez sur une catégorie pour filtrer.
+      </p>
 
       {/* Onglets avec animation */}
       <div className="relative flex justify-center space-x-4 mb-8">
@@ -37,11 +34,10 @@ function SkillsPage({ items, title_section, description_section, className }) {
           <button
             key={category.id}
             onClick={() => setActiveCategory(category.id)}
-            className={`relative z-10 px-4 py-2 text-sm font-medium transition ${
-              activeCategory === category.id
+            className={`relative z-10 px-4 py-2 text-sm font-medium transition ${activeCategory === category.id
                 ? "text-white"
                 : "text-gray-400"
-            }`}
+              }`}
           >
             {activeCategory === category.id && (
               <motion.div

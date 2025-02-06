@@ -1,6 +1,7 @@
 import React from "react";
 import { IoLocationSharp } from "react-icons/io5";
 import { RiExternalLinkLine } from "react-icons/ri";
+import './styles/animation.css'
 
 
 function Formation({ className, items, title_section }) {
