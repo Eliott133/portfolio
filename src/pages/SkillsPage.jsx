@@ -65,7 +65,7 @@ function SkillsPage({ items, className }) {
             {item.icon && (
               <div className="flex items-center justify-center mb-4 ">
                 <img
-                  src={`/src/assets/logo/${item.icon}.svg`}
+                  src={`/logo/${item.icon}.svg`}
                   alt={item.icon}
                   width={"100px"}
                   height={"100px"}

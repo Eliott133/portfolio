@@ -74,7 +74,7 @@ function Nav() {
         </li>
 
         <li className="transition-all duration-300 ease-in-out hover:px-2">
-          <a className="tooltip" data-tip="Contact" href="#contact" aria-label="Contact">
+          <a className="tooltip" data-tip="Contact" href="mailto:mauberteliott9@gmail.com" aria-label="Contact">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
@@ -109,7 +109,7 @@ function Nav() {
             className="tooltip"
             data-tip="LinkedIn"
             rel="noopener noreferrer"
-            href="https://www.linkedin.com/in/eliott-m-680404251/"
+            href="https://www.linkedin.com/in/eliott-maubert/"
             target="_blank"
             aria-label="LinkedIn">
             <FaLinkedin size={20} />
