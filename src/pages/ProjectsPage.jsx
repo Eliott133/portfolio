@@ -40,7 +40,7 @@ function ProjectsPage () {
               {tech === 'all' ? 'Tous' : (
                 <div className="flex items-center gap-2">
                   <img
-                    src={`/src/assets/logo/${tech}.svg`}
+                    src={`/logo/${tech}.svg`}
                     alt={tech}
                     className="w-5 h-5"
                   />

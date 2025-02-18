@@ -9,7 +9,7 @@ function Profile({ className }) {
           <span className="indicator-item badge badge-success">Disponible</span>
             <div className="w-32 rounded-lg">
               <img
-                src="/src/assets/pp.png"
+                src="/pp.png"
                 alt="Profile"
               />
             </div>

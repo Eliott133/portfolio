@@ -35,7 +35,7 @@ function ProjectCard({
             {langage.map((tech) => (
               <img
                 key={tech}
-                src={`/src/assets/logo/${tech}.svg`}
+                src={`/logo/${tech}.svg`}
                 alt={tech}
                 width="30"
                 height="30"
