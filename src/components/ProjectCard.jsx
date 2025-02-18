@@ -30,7 +30,7 @@ function ProjectCard({
       </div>
 
       <div className="absolute bottom-0 px-8 transform-gpu translate-y-full transition-transform duration-300 ease-in-out group-hover:translate-y-0 w-full">
-        <div className="flex items-center justify-between mb-4">
+        <div className="flex items-center justify-between my-4">
           <div className="flex gap-2">
             {langage.map((tech) => (
               <img
@@ -47,11 +47,7 @@ function ProjectCard({
           <span className="text-sm font-medium">{hoveredLangage}</span>
         </div>
 
-        <div className="flex justify-between items-center">
-          <Button variant="primary">
-            En savoir plus
-            <Icon name="FaArrowRight" size={16} />
-          </Button>
+        <div className="flex justify-end items-center mb-4">
           
           <div className="flex gap-4">
             {githubUrl && (
